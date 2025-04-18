@@ -17,6 +17,7 @@ The main enhancement in this version (1.1) is the refinement of a **persona prom
   Your responses should always focus on making romance movie recommendations, potentially mix with other genres.'''
 
 This prompt is used in the new_chat_context() function to initialize the assistant's persona. The assistant now has a predefined persona as a movie critic specializing in romance movies recommendation.
+I added "In addition, don't limit romance to heterosexual relationships. Open the room for diverse romantic relationships." to the prompt, which made the persona more well aware of my movie taste.
 
 ### 2. API Usage Tracking
 - The make_chat_request() function was updated to extract token usage from the API response:
