@@ -32,12 +32,12 @@ This prompt is used in the new_chat_context() function to initialize the assista
 
 ### 2. API Usage Tracking
 - The make_chat_request() function was updated to extract token usage from the API response:
-usage = resp_dict.get('usage', {}).get('total_tokens', 0)
+'''python usage = resp_dict.get('usage', {}).get('total_tokens', 0)'''
 
 - The main() function was modified to:
   - Track cumulative token usage during the session.
   - Display the total usage at the end of the session:
-print(f"Total usage for this session: {total_usage} tokens")
+'''python print(f"Total usage for this session: {total_usage} tokens")'''
 
 The program now tracks and displays the total number of tokens used during a session. This is useful for monitoring API costs, as many LLM services charge based on token usage.
 
